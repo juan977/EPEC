@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login para 1 usuario</title>
+    <link rel="stylesheet" href="css/estilos5.css">
+
+    <script type="text/javascript">
+        function validar()
+        {
+            var usuario = document.getElementById("usuario").value;
+            var contraseña = document.getElementById("pass").value;
+
+            if(usuario=="campos" && contraseña=="123456")
+            {
+                alert("Usuario y contraseña valido")
+            } 
+            else
+            {
+                alert("Verifique sus datos");
+            }
+        }
+    
+    </script>
+</head>
+<body>
+   <center>
+       <table>
+           <tr>
+               <td><label>Usuario: </label></td>
+               <td><input type="text" name="usuario" id="usuario"></td>
+           </tr>
+           <tr>
+            <td><label>contraseña: </label></td>
+            <td><input type="password" name="pass" id="pass"></td>
+           </tr>
+           <tr>
+            <td colspan="2">
+            <input type="button" name="btnVerifica" id="btnVerifica" onclick="validar()" value="verificar" style="width: 100%"></td> 
+           </tr>
+       </table>
+   </center>
+   
+</body>
+</html>

@@ -1,4 +1,4 @@
-/*
+
 document.writeln("Calculadora: ");
 document.writeln("Eliga una opcion: ")
 document.writeln("1. Suma: ")
@@ -8,7 +8,7 @@ document.writeln("4. Division: ")
 document.writeln("5. Raiz Cúbica: ")
 document.writeln("6. Factorial: ")
 document.writeln("7. Potencia: ")
-*/
+
 
 var x1 = Number(prompt("Ingresar numero 1: "));
 var x2 = Number(prompt("Ingresar numero 2: "));
@@ -23,13 +23,13 @@ if (x1>x2) {
 */
 switch (op) {
     case 1: 
-        document.write("La suma en los numeros es: "+suma(x,y));
+        document.writeln("La suma en los numeros es: "+suma(x,y));
         break;
     case 2: 
-        document.write("La resta de los numeros es: "+resta(x,y));
+        document.writeln("La resta de los numeros es: "+resta(x,y));
         break;
     case 3: 
-        document.write("El resultado de la multiplicacion es: "+multplicaicon(x,y));
+        document.writeln("El resultado de la multiplicacion es: "+multplicaicon(x,y));
         break;
     case 4: 
         document.write("El resultado de la division es: "+division(x,y));
